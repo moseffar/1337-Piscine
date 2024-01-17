@@ -11,12 +11,12 @@
 /* ************************************************************************** */
 int	ft_strcmp(char *s1, char *s2)
 {
-	unsigned int	f;
+	unsigned int	a;
 
-	f = 0;
-	while (s1[f] == s2[f] && s1[f] != '\0' && s2[f] != '\0')
+	a = 0;
+	while (s1[a] == s2[a] && s1[a] != '\0' && s2[a] != '\0')
 	{
-		f++;
+		a++;
 	}
-	return (s1[f] - s2[f]);
+	return (s1[a] - s2[a]);
 }
