@@ -9,9 +9,9 @@
 /*   Updated: 2023/09/25 09:48:19 by moseffar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(char *s1, char *s2, unsigned int a)
 {
-	while (n--)
+	while (a--)
 	{
 		if (*s1 != *s2 || !(*s1 && *s2))
 		{
