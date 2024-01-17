@@ -12,19 +12,19 @@
 char	*ft_strcat(char *dest, char *src)
 {
 	int	len;
-	int	z;
+	int	a;
 
 	len = 0;
-	z = 0;
+	a = 0;
 	while (dest[len] != '\0')
 	{
 		len++;
 	}
-	while (src[z] != '\0')
+	while (src[a] != '\0')
 	{
-		dest[len + z] = src[z];
-		z++;
+		dest[len + a] = src[a];
+		a++;
 	}
-	dest[len + z] = '\0';
+	dest[len + a] = '\0';
 	return (dest);
 }
