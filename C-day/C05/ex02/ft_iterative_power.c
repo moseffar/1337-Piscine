@@ -12,10 +12,10 @@
 int	ft_iterative_power(int nb, int power)
 {
 	int	i;
-	int	alo;
+	int	ah;
 
 	i = 1;
-	alo = nb;
+	ah = nb;
 	if (power == 0)
 		return (1);
 	if (power < 0)
@@ -24,8 +24,8 @@ int	ft_iterative_power(int nb, int power)
 		return (1);
 	while (i < power)
 	{
-		alo = nb * alo;
+		ah = nb * ah;
 		i++;
 	}
-	return (alo);
+	return (ah);
 }
