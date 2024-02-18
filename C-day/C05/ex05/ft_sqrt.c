@@ -11,22 +11,22 @@
 /* ************************************************************************** */
 int	ft_sqrt(int nb)
 {
-	long	in;
-	long	alo;
+	long	i;
+	long	ah;
 
-	alo = nb;
-	if (alo <= 0)
+	ah = nb;
+	if (ah <= 0)
 		return (0);
-	if (alo == 1)
+	if (ah == 1)
 		return (1);
-	in = 2;
-	if (alo >= 2)
+	i = 2;
+	if (ah >= 2)
 	{
-		while (in * in <= alo)
+		while (i * i <= ah)
 		{
-			if (in * in == alo)
-				return (in);
-			in++;
+			if (i * i == ah)
+				return (i);
+			i++;
 		}
 	}
 	return (0);
