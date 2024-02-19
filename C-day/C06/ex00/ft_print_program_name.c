@@ -13,14 +13,14 @@
 
 int	main(int ac, char **av)
 {
-	int	i;
+	int	a;
 
-	i = 0;
+	a = 0;
 	(void)ac;
-	while (av[0][i])
+	while (av[0][a])
 	{
-		write(1, &av[0][i], 1);
-		i++;
+		write(1, &av[0][a], 1);
+		a++;
 	}
 	write(1, "\n", 1);
 }
