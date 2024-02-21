@@ -14,12 +14,12 @@
 
 void	ft_print_reverse_alphabet(void)
 {
-	int	a;
+	int	i;
 
-	a = 'z';
-	while (a >= 'a')
+	i = 'z';
+	while (i >= 'a')
 	{
-		write(1, &a, 1);
-		a--;
+		write(1, &i, 1);
+		i--;
 	}
 }
