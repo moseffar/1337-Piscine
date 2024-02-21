@@ -13,7 +13,7 @@
 
 void	ft_print_alphabet(void)
 {
-	int	a ;
+	int	a;
 
 	a = 'a';
 	while (a <= 'z')
