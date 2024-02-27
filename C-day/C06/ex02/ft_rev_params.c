@@ -13,24 +13,24 @@
 
 int	main(int ac, char **av)
 {
-	int	a;
-	int	b;
+	int	i;
+	int	j;
 
-	a = 1;
-	while (ac > 1 && av[a] != '\0')
+	i = 1;
+	while (ac > 1 && av[i] != '\0')
 	{
-		a++;
+		i++;
 	}
-	a--;
-	while (a > 0)
+	i--;
+	while (i > 0)
 	{
-		b = 0;
-		while (av[a][b] != '\0')
+		j = 0;
+		while (av[i][j] != '\0')
 		{
-			write(1, &av[a][b], 1);
-			b++;
+			write(1, &av[i][j], 1);
+			j++;
 		}
 		write(1, "\n", 1);
-		a--;
+		i--;
 	}
 }
