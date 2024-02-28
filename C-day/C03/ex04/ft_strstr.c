@@ -11,23 +11,23 @@
 /* ************************************************************************** */
 char	*ft_strstr(char *str, char *to_find)
 {
-	int	a;
-	int	b;
+	int	i;
+	int	j;
 
-	a = 0;
-	b = 0;
+	i = 0;
+	j = 0;
 	if (to_find[0] == '\0')
 		return (str);
-	while (str[a] != '\0')
+	while (str[i] != '\0')
 	{
-		while (str[a + b] != '\0' && str[a + b] == to_find[b])
+		while (str[i + j] != '\0' && str[i + j] == to_find[j])
 		{
-			b++;
+			j++;
 		}
-		if (to_find[b] == '\0')
-			return (str + a);
-		a++;
-		b = 0;
+		if (to_find[j] == '\0')
+			return (str + i);
+		i++;
+		j = 0;
 	}
 	return (0);
 }
