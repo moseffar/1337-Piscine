@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 int	ft_str_is_lowercase(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (!(str[a] >= 'a' && str[a] <= 'z'))
+		if (!(str[i] >= 'a' && str[i] <= 'z'))
 			return (0);
-		a++;
+		i++;
 	}
 	return (1);
 }
