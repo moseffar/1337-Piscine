@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 int	ft_str_is_uppercase(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (!(str[a] >= 'A' && str[a] <= 'Z'))
+		if (!(str[i] >= 'A' && str[i] <= 'Z'))
 			return (0);
-		a++;
+		i++;
 	}
 	return (1);
 }
