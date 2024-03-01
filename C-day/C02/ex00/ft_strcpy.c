@@ -12,14 +12,14 @@
 
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	int	a;
 
-	i = 0;
-	while (src[i] != '\0')
+	a = 0;
+	while (src[a] != '\0')
 	{
-		dest[i] = src[i];
-		i++;
+		dest[a] = src[a];
+		a++;
 	}
-	dest[i] = '\0';
+	dest[a] = '\0';
 	return (dest);
 }
