@@ -11,18 +11,18 @@
 /* ************************************************************************** */
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int	i;
+	unsigned int	a;
 
-	i = 0;
-	while (src[i] != '\0' && i < n)
+	a = 0;
+	while (src[a] != '\0' && a < n)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[a] = src[a];
+		a++;
 	}
-	while (i < n)
+	while (a < n)
 	{
-		dest[i] = '\0';
-		i++;
+		dest[a] = '\0';
+		a++;
 	}
 	return (dest);
 }
