@@ -11,15 +11,15 @@
 /* ************************************************************************** */
 int	ft_str_is_alpha(char *str)
 {
-	int	i;
+	int	a;
 
-	i = 0;
-	while (str[i] != '\0')
+	a = 0;
+	while (str[a] != '\0')
 	{
-		if (!(str[i] >= 'a' && str[i] <= 'z') && !(str[i] >= 'A'
-				&& str[i] <= 'Z'))
+		if (!(str[a] >= 'a' && str[a] <= 'z') && !(str[a] >= 'A'
+				&& str[a] <= 'Z'))
 			return (0);
-		i++;
+		a++;
 	}
 	return (1);
 }
