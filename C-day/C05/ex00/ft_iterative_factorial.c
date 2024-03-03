@@ -12,15 +12,15 @@
 int	ft_iterative_factorial(int nb)
 {
 	int	i;
-	int	ah;
+	int	str;
 
 	i = 2;
-	ah = 1;
+	str = 1;
 	if (nb == 1 || nb == 0)
 		return (1);
 	if (nb < 0)
 		return (0);
 	while (i <= nb)
-		ah = ah * i++;
-	return (ah);
+		str = str * i++;
+	return (str);
 }
