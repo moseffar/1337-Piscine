@@ -14,17 +14,17 @@ int	ft_sqrt(int nb)
 	long	i;
 	long	ah;
 
-	ah = nb;
-	if (ah <= 0)
+	str = nb;
+	if (str <= 0)
 		return (0);
-	if (ah == 1)
+	if (str == 1)
 		return (1);
 	i = 2;
-	if (ah >= 2)
+	if (str >= 2)
 	{
-		while (i * i <= ah)
+		while (i * i <= str)
 		{
-			if (i * i == ah)
+			if (i * i == str)
 				return (i);
 			i++;
 		}
