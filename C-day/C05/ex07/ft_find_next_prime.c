@@ -12,10 +12,10 @@
 int	ft_is_prime(int nb)
 {
 	int	i;
-	int	ah;
+	int	str;
 
 	i = 2;
-	ah = 1;
+	str = 1;
 	if (nb <= 1)
 		return (0);
 	if (nb > 2)
@@ -27,7 +27,7 @@ int	ft_is_prime(int nb)
 			i++;
 		}
 	}
-	return (ah);
+	return (str);
 }
 
 int	ft_find_next_prime(int nb)
