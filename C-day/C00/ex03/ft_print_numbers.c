@@ -13,12 +13,12 @@
 
 void	ft_print_numbers(void)
 {
-	int	a;
+	int	i;
 
-	a = '0';
-	while (a <= '9')
+	i = '0';
+	while (i <= '9')
 	{
-		write(1, &a, 1);
-		a++;
+		write(1, &i, 1);
+		i++;
 	}
 }
