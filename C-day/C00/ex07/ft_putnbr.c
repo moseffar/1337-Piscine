@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	fputchar(char a)
+void	fputchar(char i)
 {
-	write(1, &a, 1);
+	write(1, &i, 1);
 }
 
 void	ft_putnbr(int nb)
