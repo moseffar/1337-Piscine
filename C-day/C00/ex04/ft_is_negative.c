@@ -11,9 +11,9 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	ft_is_negative(int a)
+void	ft_is_negative(int i)
 {
-	if (a >= 0)
+	if (i >= 0)
 		write(1, "P", 1);
 	else
 		write(1, "N", 1);
