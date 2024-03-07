@@ -13,28 +13,28 @@
 
 void	ft_print_comb(void)
 {
-	char	a;
+	char	i;
 	char	b;
 	char	c;
 
-	a = '0';
-	while (a <= '7')
+	i = '0';
+	while (i <= '7')
 	{
-		b = a +1;
+		b = i +1;
 		while (b <= '8')
 		{
 			c = b + 1;
 			while (c <= '9')
 			{
-				write(1, &a, 1);
+				write(1, &i, 1);
 				write(1, &b, 1);
 				write(1, &c, 1);
-				if (a != '7')
+				if (i != '7')
 					write (1, ", ", 2);
 				c++;
 			}
 			b++;
 		}
-		a++;
+		i++;
 	}
 }
