@@ -13,19 +13,19 @@
 
 int	main(int ac, char **av)
 {
-	int	i;
-	int	j;
+	int	a;
+	int	b;
 
-	i = 1;
-	while (ac > i)
+	a = 1;
+	while (ac > a)
 	{
-		j = 0;
-		while (av[i][j])
+		b = 0;
+		while (av[a][b])
 		{
-			write(1, &av[i][j], 1);
-			j++;
+			write(1, &av[a][b], 1);
+			b++;
 		}
 		write(1, "\n", 1);
-		i++;
+		a++;
 	}
 }
