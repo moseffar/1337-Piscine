@@ -13,11 +13,11 @@ int	ft_atoi(char *str)
 {
 	int	i;
 	int	sign;
-	int	result;
+	int	res;
 
 	i = 0;
 	sign = 1;
-	result = 0;
+	res = 0;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
 	while (str[i] == '-' || str[i] == '+')
@@ -28,9 +28,9 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
-		result *= 10;
-		result += str[i] - '0';
+		res *= 10;
+		res += str[i] - '0';
 		i++;
 	}
-	return (result * sign);
+	return (res * sign);
 }
