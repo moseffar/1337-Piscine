@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 int	ft_str_is_numeric(char *str)
 {
-	int	a;
+	int	i;
 
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (!(str[a] >= '0' && str[a] <= '9'))
+		if (!(str[i] >= '0' && str[i] <= '9'))
 			return (0);
-		a++;
+		i++;
 	}
 	return (1);
 }
