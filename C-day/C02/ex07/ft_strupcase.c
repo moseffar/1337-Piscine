@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 char	*ft_strupcase(char *str)
 {
-	int	i;
+	int	a;
 
-	i = 0;
-	while (str[i] != '\0')
+	a = 0;
+	while (str[a] != '\0')
 	{
-		if (str[i] <= 122 && str[i] >= 97)
-			str[i] -= 32;
-		i++;
+		if (str[a] <= 122 && str[a] >= 97)
+			str[a] -= 32;
+		a++;
 	}
 	return (str);
 }
