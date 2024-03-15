@@ -11,17 +11,17 @@
 /* ************************************************************************** */
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	i;
+	unsigned int	a;
 
-	i = 0;
-	while (src[i] != '\0' && i < size - 1 && size > 0)
+	a = 0;
+	while (src[a] != '\0' && a < size - 1 && size > 0)
 	{
-		dest[i] = src[i];
-		i++;
+		dest[a] = src[a];
+		a++;
 	}
 	if (size > 0)
-		dest[i] = '\0';
-	while (src[i] != '\0')
-		i++;
-	return (i);
+		dest[a] = '\0';
+	while (src[a] != '\0')
+		a++;
+	return (a);
 }
