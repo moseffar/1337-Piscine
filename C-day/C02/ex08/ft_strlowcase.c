@@ -11,14 +11,14 @@
 /* ************************************************************************** */
 char	*ft_strlowcase(char *str)
 {
-	int	i;
+	int	a;
 
-	i = 0;
-	while (str[i] != '\0')
+	a = 0;
+	while (str[a] != '\0')
 	{
-		if (str[i] <= 90 && str[i] >= 65)
-			str[i] += 32;
-		i++;
+		if (str[a] <= 90 && str[a] >= 65)
+			str[a] += 32;
+		a++;
 	}
 	return (str);
 }
