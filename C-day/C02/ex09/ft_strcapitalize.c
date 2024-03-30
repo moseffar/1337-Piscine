@@ -25,17 +25,17 @@ char	*ft_strlowcase(char *str)
 
 char	*ft_strcapitalize(char *str)
 {
-	int	a;
+	int	i;
 
 	ft_strlowcase(str);
-	a = 0;
-	while (str[a] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (str[a] >= 'a' && str[a] <= 'z')
-			if (str[a - 1] < '0' || (str[a - 1] > '9' && str[a - 1] < 'A')
-				|| (str[a - 1] > 'Z' && str[a - 1] < 'a') || str[a - 1] > 'z')
-				str[a] -= 32;
-		a++;
+		if (str[i] >= 'a' && str[i] <= 'z')
+			if (str[i - 1] < '0' || (str[i - 1] > '9' && str[i - 1] < 'A')
+				|| (str[i - 1] > 'Z' && str[i - 1] < 'a') || str[i - 1] > 'z')
+				str[i] -= 32;
+		i++;
 	}
 	return (str);
 }
