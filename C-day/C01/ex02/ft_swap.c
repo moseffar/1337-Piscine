@@ -12,9 +12,9 @@
 
 void	ft_swap(int *a, int *b)
 {
-	int	str;
+	int	swp;
 
-	str = *a;
+	swp = *a;
 	*a = *b;
-	*b = str;
+	*b = swp;
 }
