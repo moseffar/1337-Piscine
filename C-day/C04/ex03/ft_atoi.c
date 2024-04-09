@@ -11,26 +11,26 @@
 /* ************************************************************************** */
 int	ft_atoi(char *str)
 {
-	int	a;
+	int	i;
 	int	sign;
 	int	res;
 
-	a = 0;
+	i = 0;
 	sign = 1;
 	res = 0;
-	while (str[a] == 32 || (str[a] >= 9 && str[a] <= 13))
-		a++;
-	while (str[a] == '-' || str[a] == '+')
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
-		if (str[a] == '-')
+		if (str[i] == '-')
 			sign *= -1;
-		a++;
+		i++;
 	}
-	while (str[a] != '\0' && str[a] >= '0' && str[i] <= '9')
+	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
 	{
 		res *= 10;
-		res += str[a] - '0';
-		a++;
+		res += str[i] - '0';
+		i++;
 	}
 	return (res * sign);
 }
