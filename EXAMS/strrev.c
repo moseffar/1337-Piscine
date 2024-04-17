@@ -1,22 +1,22 @@
 char    *ft_strrev(char *str)
 {
-	int	a = 0;
+	int	i = 0;
 	int	tl = 0;
 	char	s;
 	int		m;
 
-	while(str[a])
+	while(str[i])
 	{
-		a++;
+		i++;
 	}
-	m = (a/2);
+	m = (i/2);
 	while(tl < m)
 	{
 		s = str[tl];
-		str[tl] = str[a-1];
-		str[a-1] = s;
+		str[tl] = str[i-1];
+		str[i-1] = s;
 		tl++;
-		a--;
+		i--;
 	}
 	return(str);
 }
