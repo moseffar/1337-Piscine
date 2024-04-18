@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 int	ft_iterative_power(int nb, int power)
 {
-	int	a;
+	int	i;
 	int	str;
 
-	a = 1;
+	i = 1;
 	str = nb;
 	if (power == 0)
 		return (1);
@@ -22,10 +22,10 @@ int	ft_iterative_power(int nb, int power)
 		return (0);
 	if (nb == 0 && power == 0)
 		return (1);
-	while (a < power)
+	while (i < power)
 	{
 		str = nb * str;
-		a++;
+		i++;
 	}
 	return (str);
 }
