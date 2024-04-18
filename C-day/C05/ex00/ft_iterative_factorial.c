@@ -11,16 +11,16 @@
 /* ************************************************************************** */
 int	ft_iterative_factorial(int nb)
 {
-	int	a;
+	int	i;
 	int	str;
 
-	a = 2;
+	i = 2;
 	str = 1;
 	if (nb == 1 || nb == 0)
 		return (1);
 	if (nb < 0)
 		return (0);
-	while (a <= nb)
-		str = str * a++;
+	while (i <= nb)
+		str = str * i++;
 	return (str);
 }
