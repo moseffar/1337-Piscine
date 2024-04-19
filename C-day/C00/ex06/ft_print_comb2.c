@@ -11,28 +11,28 @@
 /* ************************************************************************** */
 #include <unistd.h>
 
-void	putchar(char i)
+void	putchar(char c)
 {
-	write(1, &i, 1);
+	write(1, &c, 1);
 }
 
 void	ft_print_comb2(void)
 {
 	int	i;
-	int	b;
+	int	j;
 
 	i = 0;
 	while (i <= 98)
 	{
-		b = i + 1;
-		while (b <= 99)
+		j = i + 1;
+		while (j <= 99)
 		{
 			putchar((i / 10) + 48);
 			putchar((i % 10) + 48);
 			write(1, " ", 1);
-			putchar((b / 10) + 48);
-			putchar((b % 10) + 48);
-			b++;
+			putchar((j / 10) + 48);
+			putchar((j % 10) + 48);
+			j++;
 			if (i != 98)
 				write(1, ", ", 2);
 		}
